@@ -26,7 +26,7 @@ az container create \
   --name n8n \
   --image n8nio/n8n \
   --ports 5678 \
-  --dns-name-label <unique-dns-name> \
+  --dns-name-label myn8ninstance2025es \
   --environment-variables N8N_BASIC_AUTH_ACTIVE=true N8N_BASIC_AUTH_USER=admin N8N_BASIC_AUTH_PASSWORD=changeme
 ```
 
