@@ -1,3 +1,20 @@
+## Note on Secure Cookies
+
+If you are not using HTTPS, you must disable n8n's secure cookie requirement. Add the following environment variable to your container deployment commands:
+
+```
+N8N_SECURE_COOKIE=false
+```
+
+Example (add to your az container create or docker run command):
+
+```
+--environment-variables N8N_BASIC_AUTH_ACTIVE=true N8N_BASIC_AUTH_USER=admin N8N_BASIC_AUTH_PASSWORD=changeme N8N_SECURE_COOKIE=false
+```
+
+This will allow n8n to function over HTTP without requiring secure cookies.
+
+---
 ## Alternative: Deploy from Azure Container Registry (ACR)
 If Docker Hub is unavailable or rate-limited, you can use Azure Container Registry (ACR) as an alternative image source:
 
