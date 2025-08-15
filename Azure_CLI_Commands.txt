@@ -1,0 +1,5 @@
+az account show
+az --version
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash #Installs the Azure CLI
+az group list -o table #lists resource groups 
+az logout
